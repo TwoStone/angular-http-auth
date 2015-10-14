@@ -5,7 +5,7 @@
  * (c) 2012 Witold Szczerba
  * License: MIT
  */
-(function () {
+(function (window, angular, undefined) {
   'use strict';
 
   angular.module('http-auth-interceptor', ['http-auth-interceptor-buffer'])
@@ -127,4 +127,4 @@
       }
     };
   }]);
-})();
+})(window, window.angular);
